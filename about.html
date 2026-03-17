@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a href="index.html" class="brand" aria-label="BAFT Home">
-        <img src="assets/img/baft-logo.svg" alt="BAFT logo" />
-        <div class="brand-text">
-          <span>BAFT</span>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/img/baft-logo.svg" alt="BAFT logo" class="brand-logo" />
+        <div class="brand-copy">
+          <strong>BAFT</strong>
           <span>Building a Better Future Together</span>
         </div>
       </a>
 
-      <button class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
 
       <nav class="site-nav">
         <a href="index.html">Home</a>
@@ -31,53 +31,77 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero-small">
-      <div class="container">
-        <span class="eyebrow">About BAFT</span>
-        <h1>About Us</h1>
+    <section class="about-hero">
+      <div class="container about-hero-grid">
+        <div class="about-hero-copy fade-up">
+          <span class="eyebrow">About BAFT</span>
+          <h1>Building stronger homes, confidence and community ownership.</h1>
+          <p>
+            BAFT exists to respond to housing inequality and a lack of community resources by using a
+            community self-build model that creates opportunity, pride and long-term local benefit.
+          </p>
+        </div>
+
+        <div class="about-hero-image fade-in">
+          <img src="assets/img/gallery/gallery-1.jpg" alt="BAFT community work" />
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container narrow fade-in">
-        <p>
-          Building A Better Future Together (BAFT) was born out of a programme of robust research, which
-          identified that a large proportion of young people from impoverished areas across Kirklees, will
-          struggle to buy their own home, or acquire good quality housing, which will impact on their future
-          life chances, e.g. raising stable families, self-belief/pride, mental health, resilience etc.
-        </p>
+        <div class="content-card">
+          <h2>About Us</h2>
 
-        <p>
-          BAFT research has also highlighted that communities are being starved of vital social resources, that
-          will enable communities to become more self-sufficient and to grow.
-        </p>
+          <p>
+            Building A Better Future Together (BAFT) was born out of a programme of robust research,
+            which identified that a large proportion of young people from impoverished areas across
+            Kirklees, will struggle to buy their own home, or acquire good quality housing, which will
+            impact on their future life chances, e.g. raising stable families, self-belief/pride,
+            mental health, resilience etc.
+          </p>
 
-        <p>
-          BAFT uses the <strong>Community-Self-Build</strong> model to engage communities in addressing the above
-          challenges.
-        </p>
+          <p>
+            BAFT research has also highlighted that communities are being starved of vital social
+            resources, that will enable communities to become more self-sufficient and to grow.
+          </p>
 
-        <div class="info-card fade-up">
-          <h2>Community self-build has a number of meanings:</h2>
-          <ul class="styled-list">
-            <li>A building site where everyone is trained up and organised to work together on each other’s homes collectively</li>
-            <li>A neighbourhood group setting up a project as a low-cost route to helping local young people to get on the housing ladder.</li>
-            <li>A group of community members wanting to create an intentional community with shared living spaces.</li>
-            <li>A community group project to rejuvenate old or derelict buildings into community centres or spaces.</li>
-          </ul>
+          <p>
+            BAFT uses the <strong>Community-Self-Build</strong> model to engage communities in
+            addressing the above challenges.
+          </p>
         </div>
-
-        <p class="closing-text">
-          The common thread running through all these projects is people organising themselves together, to
-          create the kind of homes – and communities – that they want.
-        </p>
       </div>
     </section>
 
     <section class="section">
+      <div class="container two-col">
+        <div class="info-panel fade-up">
+          <span class="panel-label">Community Self-Build</span>
+          <h3>What it can mean</h3>
+          <ul class="styled-list">
+            <li>A building site where everyone is trained up and organised to work together on each other’s homes collectively</li>
+            <li>A neighbourhood group setting up a project as a low-cost route to helping local young people to get on the housing ladder</li>
+            <li>A group of community members wanting to create an intentional community with shared living spaces</li>
+            <li>A community group project to rejuvenate old or derelict buildings into community centres or spaces</li>
+          </ul>
+        </div>
+
+        <div class="info-panel fade-up">
+          <span class="panel-label">Shared Purpose</span>
+          <h3>People shaping the future together</h3>
+          <p>
+            The common thread running through all these projects is people organising themselves together,
+            to create the kind of homes – and communities – that they want.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section">
       <div class="container">
         <span class="eyebrow">Our Team</span>
-        <h2>The people behind the work.</h2>
+        <h2 class="section-title">The people behind the work.</h2>
 
         <div class="team-grid">
           <article class="team-card fade-up">
