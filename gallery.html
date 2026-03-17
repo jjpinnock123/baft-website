@@ -1,95 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | BAFT</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BAFT | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="assets/img/baft-logo.svg" class="brand-logo">
-      <div>
-        <strong>BAFT</strong>
-        <span>Building a Better Future Together</span>
-      </div>
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="BAFT Home">
+      <img src="assets/img/baft-logo.svg" alt="BAFT logo" />
+      <div class="brand-text"><span>BAFT</span><span>Building a Better Future Together</span></div>
     </a>
-
-    <nav class="site-nav">
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="how-we-work.html">How We Work</a>
       <a href="gallery.html" class="active">Gallery</a>
+      <a href="adverts.html">Advertisements</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-<section class="page-intro">
-  <div class="container narrow">
-    <span class="eyebrow">Gallery</span>
-    <h1 class="section-title">Our work in pictures</h1>
-    <p class="section-lead">
-      A visual look at BAFT projects, community work and training activity.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <div class="gallery-filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="community">Community</button>
-      <button class="filter-btn" data-filter="build">Build</button>
-      <button class="filter-btn" data-filter="training">Training</button>
+  <section class="page-hero">
+    <div class="container page-intro">
+      <span class="eyebrow">Gallery</span>
+      <h1>Our work in pictures.</h1>
+      <p class="lead">A cleaner gallery view of BAFT project spaces, community activity and practical build work.</p>
     </div>
+  </section>
 
-    <div class="gallery-grid">
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+        <button class="filter-btn" data-filter="build">Build</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+      </div>
 
-      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/project1.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project2.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project3.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project4.jpg"></div>
+      <div class="gallery-grid-clean">
+        <button class="gallery-card" data-category="community"><img src="assets/img/gallery/project1.jpg" alt="Community group image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/project2.jpg" alt="Project image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/project3.jpg" alt="Project image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/project4.jpg" alt="Project image"></button>
 
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp1.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp2.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp3.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp4.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp5.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp6.jpg"></div>
-
-      <div class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp7.jpg"></div>
-      <div class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp8.jpg"></div>
-
-      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp9.jpg"></div>
-      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp10.jpg"></div>
-
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp11.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp12.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp13.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp14.jpg"></div>
-      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp15.jpg"></div>
-
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp1.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp2.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp3.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp4.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp5.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp6.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp7.jpg" alt="Training image"></button>
+        <button class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp8.jpg" alt="Training image"></button>
+        <button class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp9.jpg" alt="Community image"></button>
+        <button class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp10.jpg" alt="Community image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp11.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp12.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp13.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp14.jpg" alt="Build work image"></button>
+        <button class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp15.jpg" alt="Build work image"></button>
+      </div>
     </div>
-
-  </div>
-</section>
-
+  </section>
 </main>
 
-<div class="lightbox" id="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-img" id="lightbox-img">
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+  <img id="lightboxImage" class="lightbox-image" alt="Expanded gallery image">
 </div>
 
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>BAFT — Building a Better Future Together</strong><div class="small">Community-led development, regeneration and opportunity.</div></div>
+    <div class="small">Hill Grove Lea, Huddersfield, HD3 3YD · <a href="tel:07816017102">07816 017102</a></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 <script src="assets/js/gallery.js"></script>
-
 </body>
 </html>
