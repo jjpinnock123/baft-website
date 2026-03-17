@@ -31,10 +31,19 @@
 
 <main>
 
+<section class="page-intro">
+  <div class="container narrow">
+    <span class="eyebrow">Gallery</span>
+    <h1 class="section-title">Our work in pictures</h1>
+    <p class="section-lead">
+      A visual look at BAFT projects, community work and training activity.
+    </p>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
 
-    <!-- FILTERS -->
     <div class="gallery-filters">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="community">Community</button>
@@ -42,92 +51,34 @@
       <button class="filter-btn" data-filter="training">Training</button>
     </div>
 
-    <!-- GALLERY -->
-    <div class="gallery-grid-clean">
+    <div class="gallery-grid">
 
-      <!-- KEEPING ONLY WORKING IMAGES -->
-
-      <article class="gallery-card" data-category="community">
-        <img src="assets/img/gallery/pexels-rdne-6647028.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="community">
-        <img src="assets/img/gallery/project1.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/project2.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/project3.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/project4.jpg">
-      </article>
+      <!-- MAIN IMAGES -->
+      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/pexels-rdne-6647028.jpg"></div>
+      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/project1.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project2.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project3.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/project4.jpg"></div>
 
       <!-- WHATSAPP IMAGES -->
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp1.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp2.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp3.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp4.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp5.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp6.jpg"></div>
 
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp1.jpg">
-      </article>
+      <div class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp7.jpg"></div>
+      <div class="gallery-card" data-category="training"><img src="assets/img/gallery/whatsapp8.jpg"></div>
 
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp2.jpg">
-      </article>
+      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp9.jpg"></div>
+      <div class="gallery-card" data-category="community"><img src="assets/img/gallery/whatsapp10.jpg"></div>
 
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp3.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp4.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp5.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp6.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="training">
-        <img src="assets/img/gallery/whatsapp7.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="training">
-        <img src="assets/img/gallery/whatsapp8.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="community">
-        <img src="assets/img/gallery/whatsapp9.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="community">
-        <img src="assets/img/gallery/whatsapp10.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp11.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp12.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp13.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp14.jpg">
-      </article>
-
-      <article class="gallery-card" data-category="build">
-        <img src="assets/img/gallery/whatsapp15.jpg">
-      </article>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp11.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp12.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp13.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp14.jpg"></div>
+      <div class="gallery-card" data-category="build"><img src="assets/img/gallery/whatsapp15.jpg"></div>
 
     </div>
 
@@ -138,11 +89,11 @@
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose">×</button>
-  <img id="lightboxImage">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
 </div>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
 
 </body>
 </html>
