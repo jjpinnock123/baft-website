@@ -1,14 +1,12 @@
-// FILTERS
 const buttons = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".gallery-card");
 
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
-
-    document.querySelector(".filter-btn.active").classList.remove("active");
+    document.querySelector(".active").classList.remove("active");
     btn.classList.add("active");
 
-    const filter = btn.getAttribute("data-filter");
+    const filter = btn.dataset.filter;
 
     cards.forEach(card => {
       if (filter === "all" || card.dataset.category === filter) {
@@ -20,7 +18,6 @@ buttons.forEach(btn => {
   });
 });
 
-// LIGHTBOX
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 
